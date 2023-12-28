@@ -1,7 +1,7 @@
 package com.user.service.model;
 
 public class JwtRequest {
-	
+
 	private String email;
 	private String password;
 

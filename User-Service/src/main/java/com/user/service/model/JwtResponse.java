@@ -41,6 +41,4 @@ public class JwtResponse {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
-
 }

@@ -93,4 +93,9 @@ public class BookServiceImpl implements BookService {
             throw new RuntimeException("Error occurred while deleting a book: " + e.getMessage());
         }
     }
+    
+    public List<Book> getAllBooks() {
+        // Logic to fetch all books from the data store
+        return bookRepository.findAll(); // Assuming you're using JPA repositories
+    }
 }

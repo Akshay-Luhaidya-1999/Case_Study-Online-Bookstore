@@ -16,7 +16,7 @@ import com.jwt.example.service.UserService;
 public class HomeController {
 
 	Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
+
 	@Autowired
 	private UserService service;
 
@@ -25,7 +25,7 @@ public class HomeController {
 		this.logger.warn("This is working message");
 		return "Testing message";
 	}
-	
+
 	@GetMapping("/users")
 	public List<User> getUser() {
 		System.out.println("Getting User");
@@ -33,4 +33,3 @@ public class HomeController {
 	}
 
 }
-

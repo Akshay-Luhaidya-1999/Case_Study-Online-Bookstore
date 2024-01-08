@@ -46,6 +46,12 @@ public class BookController {
             return ResponseEntity.notFound().build();
         }
     }
+    
+    @GetMapping("/allBooks")
+    public ResponseEntity<List<Book>> getAllBooks() {
+        List<Book> books = bookService.getAllBooks();
+        return ResponseEntity.ok(books);
+    }
 
     @PostMapping("/addBook")
     public ResponseEntity<Book> addBook(@RequestBody Book newBook) {
